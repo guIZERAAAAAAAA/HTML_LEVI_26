@@ -1,50 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Portal de Notícias das fofocas </title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos customizados rápidos para dar uma cara de jornal */
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+        }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
 </head>
-
 <body>
-    <header> 
-        meu titulo 
+
+<div class="container">
+    <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="link-secondary text-decoration-none" href="#">Repense</a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark text-decoration-none" href="#">Site da zueiras </a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="link-secondary" href="#" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Não entrar</a>
+            </div>
+        </div>
     </header>
 
-<main>
-        <form> 
-            <label>Nome completo </label>
-            <input type="text">
-            </br>
-            <label> idade </label>
-           <input type="text">
-<br/>
-             <label> peso </label>
-            <input type="text">
-<Br/>
-        <label> sexo </label>
-        <input type="radio" name="=Sexo"> M
-         <input type="radio" name="=Sexo"> F
-<Br/>
-        <label> modalidade de interesse  </label>
-        <input type="text">
-     <BR/>   
-      <button>enviar</button>
-        
-        </form>
-    
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary text-decoration-none" href="#">Felca</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Brasil</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">lula</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Bolsonaro</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Replublica dominicana </a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Negócios</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Política</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#">Leo lins</a>
+        </nav>
+    </div>
+</div>
 
+<main class="container">
+    <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Principais Notícias de streamers</h1>
+            <p class="lead my-3">SE LIGS NESSA .</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Ler coisas completasssss...</a></p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">DILERA</strong>
+                    <h3 class="mb-0">Dileira ataca novamente </h3>
+                    <div class="mb-1 text-muted">15 Abril</div>
+                    <p class="card-text mb-auto">Perguntou pra gio se ela era dominadora , e gio não entende.</p>
+                    <a href="#" class="stretched-link">VEJA</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Imagem</text></svg>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Leo linss faz piadas novamente </strong>
+                    <h3 class="mb-0">Agora piadas sobre 67 </h3>
+                    <div class="mb-1 text-muted">14 Abril</div>
+                    <p class="mb-auto">Sera boas essas sua novas piadas .</p>
+                    <a href="#" class="stretched-link">Continuar lendo ou não</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Imagem</text></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Últimas coisas 
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="blog-post-title mb-1">Como construir uma empresa igual do roblox </h2>
+                <p class="blog-post-meta">15 de Abril de 2026 por <a href="#"></a></p>
+
+                <p>Nesta reportagem especial, abordamos os fundamentos e as estruturas principais para fazermos o roblox 2 . Nesta reportagem vemos um jovem de 30 ano fazendo uma versão indentica e melhorada </p>
+                <hr>
+                <p>A arquitetura web moderna exige o uso do spotfy para criar o joguinho online .</p>
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Sobre o Portal do nether </h4>
+                    <p class="mb-0">Nossa missão é trazer vontade para jovens programadores , jogar minecraft .</p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Mais Lidas</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="#">Eleições 2026 lula ganhara?</a></li>
+                        <li><a href="#">Avanços de que o bolsonaro vai ganhar  </a></li>
+                        <li><a href="#">Guia de Lógica 2026 atualizado sem travamento sem anuncio de como usar python</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
+<footer class="blog-footer py-4 bg-light text-center mt-5 border-top">
+    <p>Portal criado com <a href="https://getbootstrap.com/" class="text-decoration-none">Bootstrap</a> para garantir robustez.</p>
+    <p>
+        <a href="#" class="text-decoration-none">Voltar ao topo</a>
+    </p>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
